@@ -1,0 +1,14 @@
+
+import webbrowser
+webbrowser.open('http://marathishaadi.com/', new=2)
+driver = webdriver.Chrome()
+import time
+time.sleep(5)
+button = driver.find_element_by_xpath("/html/body/div[2]/div/div[1]/div[2]/div/div/form/div/div[3]/button")
+button.click()
+button = driver.find_element_by_id("email")
+driver.send_keys("test@gmail.com")
+button = driver.find_element_by_id("password1")
+driver.send_keys("Test@1234")
+button = driver.find_element_by_xpath("/html/body/div[2]/div/div[7]/form/div[2]/div[3]/div/div")
+button = driver.find_element_by_xpath("/html/body/div[2]/div/div[7]/form/div[2]/div[3]/div/div[2]/div[1]").click()
